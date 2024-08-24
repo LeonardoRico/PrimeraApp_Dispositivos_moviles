@@ -2,4 +2,5 @@
     <string name="app_name">PrimeraEntrega</string>
     <string name="titleOne">Lista de Tareas</string>
     <string name="titleTwo">Mundo</string>
+    <string name="bienvenida">Gran día, Leonardo</string>
 </resources>
