@@ -98,27 +98,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d(TAG, "onResume called");
-        // Aquí puedes reiniciar procesos que deben estar activos mientras la actividad está en primer plano
+        // procesos que deben estar activos mientras la actividad está en primer plano
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         Log.d(TAG, "onPause called");
-        // Aquí puedes guardar el estado o detener procesos que no deben continuar mientras la actividad está en segundo plano
+        // guardar el estado o detener procesos que no deben continuar mientras la actividad está en segundo plano
     }
 
     @Override
     protected void onStop() {
         super.onStop();
         Log.d(TAG, "onStop called");
-        // Aquí puedes liberar recursos que no se necesitan mientras la actividad no está en primer plano
+        // liberar recursos que no se necesitan mientras la actividad no está en primer plano
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroy called");
-        // Aquí puedes limpiar recursos o liberar memoria
+        // limpiar recursos o liberar memoria
     }
 }
