@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">PrimeraEntrega</string>
-    <string name="titleOne">Lista de Tareas</string>
-    <string name="titleTwo">Mundo</string>
-    <string name="bienvenida">Gran día, Leonardo</string>
+    <!--Pantalla principal-->
+    <string name="Bienvenida">Gran día, Leonardo</string>
+
+    <!--Agregar tarea-->
+    <string name="Fecha_hora_actual">Fecha y hora actual</string>
+    <string name="Titulo">Título</string>
+    <string name="Decripción">Descripción</string>
+    <string name="Btn_calendario">Calendario</string>
+    <string name="Fecha">00/00/0000</string>
+    <string name="Estado">No finalizado</string>
 </resources>
