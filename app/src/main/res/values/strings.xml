@@ -1,5 +1,6 @@
 <resources>
     <!--Pantalla principal-->
+    <string name="name_app">Myapp</string>
     <string name="Bienvenida">Gran día, Leonardo</string>
 
     <!--Agregar tarea-->
