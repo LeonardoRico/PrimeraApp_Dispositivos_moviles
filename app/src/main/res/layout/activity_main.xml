@@ -102,7 +102,7 @@
             android:layout_gravity="center"
             android:background="@drawable/imagebutton_rounded_border"
             android:scaleType="fitXY"
-            android:src="@drawable/iconAdd"/>
+            android:src="@drawable/iconadd"/>
     </LinearLayout>
 
     <!--Lista de tareas guardadas-->
