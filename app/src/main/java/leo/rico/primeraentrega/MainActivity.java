@@ -1,16 +1,20 @@
 package leo.rico.primeraentrega;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
 import java.util.Calendar;
+
 import android.app.DatePickerDialog;
 import android.widget.TextView;
 import android.util.Log;
@@ -18,8 +22,11 @@ import android.util.Log;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    private ImageButton btnOpenCalendar;
-    private TextView txtdateImput;
+    ImageButton btnOpenCalendar;
+    TextView txtdateImput;
+    ImageButton btn_add_task;
+    TextView txt_welcome;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         // Configuración inicial de la actividad
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.second), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -37,9 +44,26 @@ public class MainActivity extends AppCompatActivity {
         //Inicializar componentes
         btnOpenCalendar = findViewById(R.id.btnopen_calendar);
         txtdateImput = findViewById(R.id.txtdateInput);
+        btn_add_task = findViewById(R.id.btn_add_task);
+        txt_welcome = findViewById(R.id.txt_welcome);
 
         //Configurar listeners
         btnOpenCalendar.setOnClickListener(v -> showDatePickerDialog());
+
+        //crear la configuracion del evento para añadir tareas
+        btn_add_task.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "Estoy en el botón añadir");
+
+                Intent receiveData = new Intent(MainActivity.this, FirstScreen.class);
+                String welcome_name = receiveData.getStringExtra("Name");
+                String welcome_lastname = receiveData.getStringExtra("Lastname");
+
+                txt_welcome.setText(R.string.Welcome + welcome_name + " " + welcome_lastname);
+            }
+        });
     }
 
     private void showDatePickerDialog() {
@@ -60,17 +84,17 @@ public class MainActivity extends AppCompatActivity {
                         String formattedDay, formattedMonth;
 
                         //Obtener dia
-                        if (dayOfMonth < 10){
+                        if (dayOfMonth < 10) {
                             formattedDay = 0 + String.valueOf(dayOfMonth);
-                        }else{
+                        } else {
                             formattedDay = String.valueOf(dayOfMonth);
                         }
 
                         //Obtener mes
                         int MONTH = month + 1;
-                        if (MONTH < 10){
+                        if (MONTH < 10) {
                             formattedMonth = 0 + String.valueOf(month);
-                        }else{
+                        } else {
                             formattedMonth = String.valueOf(month);
                         }
 

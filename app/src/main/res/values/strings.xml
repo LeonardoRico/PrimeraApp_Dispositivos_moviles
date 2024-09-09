@@ -1,13 +1,20 @@
 <resources>
     <!--Pantalla principal-->
-    <string name="name_app">Myapp</string>
-    <string name="Bienvenida">Gran día, Leonardo</string>
+    <string name="app_name">Myapp</string>
+    <string name="Welcome">Great day, </string>
 
     <!--Agregar tarea-->
-    <string name="Fecha_hora_actual">Fecha y hora actual</string>
-    <string name="Titulo">Título</string>
-    <string name="Decripción">Descripción</string>
-    <string name="Btn_calendario">Calendario</string>
+    <string name="Fecha_hora_actual">Current date and time</string>
+    <string name="Titulo">Title</string>
+    <string name="Decripción">Description</string>
+    <string name="Btn_calendario">Calendar</string>
     <string name="Fecha">00/00/0000</string>
-    <string name="Estado">No finalizado</string>
+    <string name="Estado">No finally</string>
+
+    <!--Pantalla inicio-->
+    <string name="Sign">Sign in</string>
+    <string name="Hint_nombre">Enter your name</string>
+    <string name="Hint_apellido">Enter your lastname</string>
+    <string name="entrar">Sign in</string>
+    <string name="title_activity_first_screen">FirstScreen</string>
 </resources>

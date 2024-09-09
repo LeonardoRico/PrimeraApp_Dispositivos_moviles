@@ -3,5 +3,7 @@
     <color name="purpura">#6d6278</color>
     <color name="turquesa">#00c9a9</color>
     <color name="gris">#d2ced5</color>
-    <color name="negro">#504d53</color>
+    <color name="grisOscuro">#504d53</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="negro">#000000</color>
 </resources>
