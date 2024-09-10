@@ -17,4 +17,5 @@
     <string name="Hint_apellido">Enter your lastname</string>
     <string name="entrar">Sign in</string>
     <string name="title_activity_first_screen">FirstScreen</string>
+    <string name="Hint_number">Enter your number</string>
 </resources>

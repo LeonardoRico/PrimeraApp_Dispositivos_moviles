@@ -1,4 +1,5 @@
 [versions]
+lottie = "6.5.0"
 agp = "8.5.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -13,6 +14,7 @@ activityCompose = "1.9.1"
 composeBom = "2024.04.01"
 
 [libraries]
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

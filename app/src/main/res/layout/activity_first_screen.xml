@@ -7,7 +7,7 @@
     android:background="@color/gris"
     android:orientation="vertical"
     tools:context="FirstScreen">
-
+x
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -59,10 +59,26 @@
             android:layout_height="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/editext_rounded_border"
             android:fontFamily="@font/slabo_13px"
             android:hint="@string/Hint_apellido"
+            android:paddingStart="10dp"
+            android:textSize="25sp"
+            tools:ignore="RtlSymmetry">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/editext_rounded_border"
+            android:fontFamily="@font/slabo_13px"
+            android:hint="@string/Hint_number"
             android:paddingStart="10dp"
             android:textSize="25sp"
             tools:ignore="RtlSymmetry">
