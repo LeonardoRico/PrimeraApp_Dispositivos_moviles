@@ -84,7 +84,8 @@
             android:layout_marginStart="20dp"
             android:background="@drawable/imagebutton_rounded_border"
             android:scaleType="fitXY"
-            android:src="@drawable/calendar" />
+            android:src="@drawable/calendar"
+            android:contentDescription="Este botón sirve para abrir el calendario"/>
     </LinearLayout>
 
     <!-- Permitirá añadir tareas -->
@@ -102,7 +103,8 @@
             android:layout_gravity="center"
             android:background="@drawable/imagebutton_rounded_border"
             android:scaleType="fitXY"
-            android:src="@drawable/iconadd"/>
+            android:src="@drawable/iconadd"
+            android:contentDescription="Este botón sirve para añadir una tarea"/>
     </LinearLayout>
 
     <!--Lista de tareas guardadas-->
